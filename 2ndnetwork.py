@@ -69,7 +69,7 @@ criterion = nn.BCELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # Training loop
-def train_model(model, train_loader, criterion, optimizer, epochs=20):
+def train_model(model, train_loader, criterion, optimizer, epochs=50):
     for epoch in range(epochs):
         model.train()
         epoch_loss = 0
